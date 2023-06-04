@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Усі пости
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Усі новини</h1>
+    {% for article in articles %}
+        <div class="card my-3">
+            <div class="card-header">
+                <h2>{{ article.title }}</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{ article.intro }}</p>
+                <p class="card-text"><small class="text-muted">Дата публікації: {{ article.date.date() }}</small></p>
+                <a href="/posts/{{ article.id }}" class="btn btn-warning">Детальніше</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Отзывы
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5"></div>
+<h1> Додати інформацію </h1>
+<form method="post">
+    <input type="text" name="name" id="name" class="form-control" placeholder="Введіть ім'я"><br>
+    <textarea name="email" id="email" class="form-control" placeholder="Введіть електронну пошту"></textarea><br>
+    <textarea name="phone" id="phone" class="form-control" placeholder="Введіть номер телефону"></textarea><br>
+    <textarea name="age" id="age" class="form-control" placeholder="Введіть свій вік"></textarea><br>
+    <textarea name="happiness_level" id="happiness_level" class="form-control" placeholder="Введіть свій рівень щастя"></textarea><br>
+    <textarea name="has_car" id="has_car" class="form-control" placeholder="Чи є у вас машина?"></textarea><br>
+    <textarea name="intro" id="intro" class="form-control" placeholder="Введіть свій рвік"></textarea><br>
+    <textarea name="text" id="text" class="form-control" placeholder=""></textarea><br>
+    <textarea name="date" id="date" class="form-control" placeholder=""></textarea><br>
+    <input type="submit" class="btn-success" value="Надіслати">
+
+
+
+</form>
+{% endblock %}
+
+
+
